@@ -17,6 +17,7 @@ class DiscountCalculator
         // La remise totale ne peut pas dépasser 20% du montant total
         $maxDiscount = $totalAmount * 0.20;
 
+        // Return
         return min($discount, $maxDiscount);
     }
 }
